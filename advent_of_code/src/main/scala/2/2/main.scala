@@ -1,6 +1,6 @@
 import scala.io.Source
 
-object Application {
+object Application22 {
 	def main(args: Array[String]): Unit = {
 		val ids = Source.fromFile("input").getLines.toList
 		val originalLength = ids(0).length

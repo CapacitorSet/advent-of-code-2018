@@ -1,7 +1,7 @@
 import java.awt.Rectangle
 import scala.io.Source
 
-object Application {
+object Application31 {
 	def rectToPoints(rect: Rectangle) =
 		for {x <- rect.x until rect.x + rect.width
 			 y <- rect.y until rect.y + rect.height}

@@ -2,7 +2,7 @@ import java.awt.Rectangle
 
 import scala.io.Source
 
-object Application {
+object Application32 {
 	def main(args: Array[String]): Unit = {
 		val format = raw"#(\d+) @ (\d+),(\d+): (\d+)x(\d+)".r()
 		val claims: Map[Int, Rectangle] = Source.fromFile("input").getLines

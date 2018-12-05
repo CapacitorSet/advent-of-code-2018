@@ -1,6 +1,6 @@
 import scala.io.Source
 
-object Application {
+object Application21 {
 	def main(args: Array[String]): Unit = {
 		val ids = Source.fromFile("input").getLines
 		val freqData: Array[Set[Int]] = ids.map(

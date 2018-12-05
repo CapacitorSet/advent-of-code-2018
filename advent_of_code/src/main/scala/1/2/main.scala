@@ -1,6 +1,6 @@
 import scala.io.Source
 
-object Application {
+object Application12 {
 	def main(args: Array[String]): Unit = {
 		val freqs = Source.fromFile("input").getLines
 			.map(_.toInt)
