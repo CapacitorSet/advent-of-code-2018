@@ -9,11 +9,11 @@ object Application {
 		// For each pair of claims,
 		val out = claims.toList.combinations(2)
 			// intersect them
-    		.map(pair => pair(0).intersection(pair(1)))
+			.map(pair => pair(0).intersection(pair(1)))
 			// get inner points
-    		.flatMap(rect => for {x <- rect.x until rect.x + rect.width; y <- rect.y until rect.y + rect.height} yield (x, y))
+			.flatMap(rect => for {x <- rect.x until rect.x + rect.width; y <- rect.y until rect.y + rect.height} yield (x, y))
 			// count the number of unique points
-    		.toSet.size
+			.toSet.size
 		println(out)
 	}
 }
