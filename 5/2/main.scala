@@ -6,8 +6,8 @@ object Application {
 	def score(input: String): Int = {
 		val output = ('A' to 'Z').foldLeft(input)((str, ch) =>
 			str
-				.replace(new StringBuilder().append(ch).append(ch.toLower), "")
-				.replace(new StringBuilder().append(ch.toLower).append(ch), "")
+				.replace(s"$ch${ch.toLower}", "")
+				.replace(s"${ch.toLower}$ch", "")
 		)
 		if (input.length == output.length)
 			input.length
